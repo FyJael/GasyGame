@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Css/style.css">
+
+	<title> Gasy Game  </title>
+
+	<link rel="icon" type="image/png" href="gg.png">
+
+	<link rel="stylesheet" type="text/css" href="Gg.css" >
+	<link rel="stylesheet" type="text/css" href="navbar.css" >
+	
+	  <link rel="stylesheet" type="text/css" href="style.css" >
+	
+    
+
+</head>
+
+<body>
+ 
+	<div class="header" id="home">
+
+		<div class="container">
+   
+            		<div class="navbar">
+                		<header>
+
+                   		 <div class="logo">
+                        		<a href="index.html" class="logo"> <h2>Gasy Game >> </h2></a>
+                    		 </div>
+
+                    		<div class="menutoggle"  onclick="toggleMenu();"></div>
+
+                    		<ul class="navbar" >
+                        		<li> <a href="index.html"  onclick="toggleMenu();"> Home </a> </li>
+                        		<li> <a href="#apropos"  onclick="toggleMenu();"> About </a> </li>    
+                    		</ul>
+                   
+               			 </header>
+        
+            		</div>
+
+		 </div>
+      	</div>
+    
+    <!---Play Ankamantatra-->
+
+    <div id="container">
+
+        <div id="Play"> <h4> Ankamantatra Play </h4> </div>
+
+        <div id="AT" style="display: none">
+
+			
+			
+            <div id="Quest"></div>
+            <div id="miSafidy">
+
+				
+                <div class="Safidy" id="A" onclick= "checkAnswer('A')"> </div>
+                <div class="Safidy" id="B" onclick= "checkAnswer('B')"> </div>
+
+            </div>
+
+            <div id="Ora">
+                <div id="Isa"></div>
+                <div id="btGauge"></div>
+                <div id="tGauge"></div>
+            </div>
+
+            <div id="progress"></div>
+
+        </div>
+
+        <div id="ContenueScore" style="display: none"></div>
+
+    </div>
+
+    <script src="Gg.js"></script>
+
+    
+</html>

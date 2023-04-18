@@ -1,0 +1,190 @@
+*, ::before, ::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url('fond.jpg');
+    background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.Contenue{
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 8%;
+	margin-left: 30px;
+}
+
+h1 h3 span {
+    position: relative;
+}
+
+h1{
+    text-shadow: 3px 5px 3px black;
+	text-transform: uppercase;
+	font-size: 50px;
+	color: #dcd7e7;
+	font-family: Abril fatface, sans-serif;
+}
+
+span{
+    display: flex;
+}
+
+.tt{
+    display: flex;
+}
+
+.text{
+    align-items: center;
+    color: #dcd7e7;
+}
+
+.Sary{
+    margin-left: 100px;
+    border-radius: 80px 80px 150px 150px;
+    box-shadow: 6px 5px 6px #a2a5d0;
+}
+
+/*-------boutton-------*/
+
+.box{
+	margin-top: 5%;
+	margin-left: 30px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    z-index: 1;
+}
+.box::before,.box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg,#ff0000,#00f0f0,#00ff00,#0000ff,#ff0000,#00f0f0,#00ff00,#0000ff,#f00f0f);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.02);
+    z-index: -1;
+    background-size: 500%;
+    animation: animation 20s linear infinite;
+}
+.box::after{
+    filter:blur(20px);
+}
+@keyframes animation{
+    0%{background-position: 0 0;}
+    50%{background-position: 300% 0;}
+    100%{background-position: 0 0;}
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1{
+	
+    border-radius: 5px;
+    background-color: #1333c2;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+    transition: all 0.6s;
+    font-size: 20px;
+    color: #ffffff;
+  
+}
+.btn1 .span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn1 .span:after{
+    content: " >>";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.6s;
+    color: #ffab1a;
+}
+.btn1:hover .span{
+    padding-right: 40px;
+}
+.btn1:hover .span:after{
+    opacity: 1;
+    right: 0;
+}
+
+
+/*----logo----*/
+
+.logo1{
+	position: fixed;
+	right: 2.9%;
+	top: 5%;
+	width: 40px;
+	height:40px;
+	cursor: pointer;
+}
+
+/*-----medias-----*/
+
+.reseau{
+	list-style-type: none;
+	position: absolute;
+	right: 3.3%;
+	top: 80%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.bulles{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solide #f1f1f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+}
+.logo-media{
+	width: 30px;
+	height: 30px;
+}
+
+
+
+
+/*--------------------- pour la barre qui descent ------------------------------------*/
+header.sticky{
+    background:rgb(14, 121, 154);
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+header.sticky .logo{
+    color: #000;
+}
+header.sticky .navbar li a{
+    color: #000;
+}
+header.sticky .navbar li a:hover{
+    color: rgb(18,44,29);
+    border-bottom: 2px solid rgb(18,44,29);
+}

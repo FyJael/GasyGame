@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    background-image: url('fond.jpg');
+    background-repeat: no-repeat;
+    margin : 10% auto;
+}
+
+#container{
+    margin : 20px auto;
+    background-color: rgb(188, 192, 158);
+    height: 400px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+#Play{
+    font-size: 1.5em;
+    font-weight: bolder;
+    width:200px;
+    height:150px;
+    border : 2px solid #2c2b2b;
+    text-align: center;
+    margin-inline: center;
+    cursor: pointer;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color : #2c2b2b;
+}
+#Play:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+h4{
+    margin-top: 25px;
+}
+
+
+
+#Quest{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+#Quest p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.5em;
+}
+
+#miSafidy{
+    width : 480px;
+    position: absolute;
+    right : 0;
+    top : 150px;
+    padding : 30px;
+}
+.Safidy{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid #4f7e85;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    margin-right: 50px;
+    
+}
+.Safidy:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+    background-color: rgb(196, 195, 195);
+    box-shadow: 2px 2px grey;
+}
+
+#Ora{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#Isa{
+    font-size: 2em;
+}
+#btGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#tGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 13px;
+    height : 15px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#ContenueScore{
+    margin-top : 80px;
+    margin-left: 35%;
+    background-color: white;
+    opacity: 0.8;
+    height: 200px;
+    width : 300px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+#ContenueScore img{
+    position: absolute;
+    top:30px;
+    left:125px;
+}
+#ContenueScore p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:100px;
+    left:125px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
